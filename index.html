@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width:100px;
+            height:100px;
+            border:1px solid #000000;
+            border-radius:50%;
+            background:orange;
+            position: fixed;
+            right:50px;
+            bottom:50px;
+            text-align: center;
+            line-height:100px;
+        }
+        body{
+            height:2000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">GO</div>
+    <script src="jquery.js"></script>
+    <script src="toBack.js"></script>
+    <script>
+        toBack({obj:$('#box')});
+    </script>
+</body>
+</html>
